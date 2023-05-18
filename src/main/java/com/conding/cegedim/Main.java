@@ -38,7 +38,7 @@ public class Main {
         }
 
         // Vérification des déplacements possibles vers la droite
-        for (int i = tourPosition.charAt(0) + 1; i < 'i'; i++) {
+        for (int i = tourPosition.charAt(0) + 1; i < 104; i++) {
             String new_position = String.valueOf((char) i) + tourPosition.charAt(1);
             if (isValidMove(new_position)) {
                 tourDeplace.add(tourPosition + "-" + new_position);
